@@ -75,6 +75,7 @@
   --ifm-blockquote-color: inherit;
   /* code */
   --ifm-code-background: rgba(128, 128, 128, 0.1);
+  --ifm-pre-background: var(--ifm-code-background);
 }
 
 html[data-theme='light'] {
