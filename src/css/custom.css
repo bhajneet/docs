@@ -73,6 +73,8 @@
   --ifm-table-border-color: rgba(128, 128, 128, 0.35);
   /* blockquote */
   --ifm-blockquote-color: inherit;
+  /* code */
+  --ifm-code-background: rgba(128, 128, 128, 0.1);
 }
 
 html[data-theme='light'] {
