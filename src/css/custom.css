@@ -95,6 +95,10 @@ html[data-theme='dark'] {
   color: var(--ifm-color-primary);
 }
 
+.navbar__link--active {
+  color: inherit;
+}
+
 .react-toggle-track {
   background-color: #80808080 !important;
 }
