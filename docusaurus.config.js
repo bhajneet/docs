@@ -42,8 +42,8 @@ module.exports = {
           position: 'left',
           items: [
             { to: 'database/', label: 'Database' },
-            { to: 'presenter/', label: 'Presenter' },
             { to: 'viewer/', label: 'Viewer' },
+            { to: 'presenter/', label: 'Presenter' },
             { to: 'mobile/', label: 'Mobile' },
             { to: 'gurmukhi-utils/', label: 'Gurmukhi Utils' },
             { to: 'theme-tool/', label: 'Theme Tool' },
