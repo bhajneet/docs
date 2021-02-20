@@ -38,14 +38,14 @@ The name of the translation source, in Gurmukhi, ASCII representation.
 
 The unique identifier of the Gurbani [composition](compositions) that the translation source corresponds to.
 
-| Type    | Constraints                                                   |
-| ------- | ------------------------------------------------------------- |
-| integer | Foreign Key ([Compositions](compositions).id), <br/> Not Null |
+| Type    | Constraints                                                      |
+| ------- | ---------------------------------------------------------------- |
+| integer | Foreign Key ([Compositions.id](compositions#id)), <br/> Not Null |
 
 ### `language_id`
 
 The unique identifier of the [language](languages) that the translation source is translated into.
 
-| Type    | Constraints                                             |
-| ------- | ------------------------------------------------------- |
-| integer | Foreign Key ([Languages](languages).id), <br/> Not Null |
+| Type    | Constraints                                                |
+| ------- | ---------------------------------------------------------- |
+| integer | Foreign Key ([Languages.id](languages#id)), <br/> Not Null |

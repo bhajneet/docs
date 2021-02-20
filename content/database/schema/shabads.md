@@ -4,7 +4,7 @@ title: Shabads
 
 The `Shabads` table is used to group the [`Lines`](lines) together, and provide additional metadata about those [`Lines`](lines).
 
-Every Shabad must have a [`composition`](compositions), [`writer`](writer), and [`section`](section).
+Every Shabad must have a [`composition`](compositions), [`writer`](writers), and [`section`](sections).
 
 The content is unordered by default, and must be ordered by `order_id`.
 
@@ -24,25 +24,25 @@ A unique identifier for the Shabad. Permanent and will never change.
 
 The unique identifier of the [writer](writers) of the Shabad.
 
-| Type    | Constraints                                         |
-| ------- | --------------------------------------------------- |
-| integer | Foreign Key ([Writers](writers).id), <br/> Not Null |
+| Type    | Constraints                                            |
+| ------- | ------------------------------------------------------ |
+| integer | Foreign Key ([Writers.id](writers#id)), <br/> Not Null |
 
 ### `section_id`
 
 The unique identifier of the [section](sections) that the Shabad belongs to.
 
-| Type    | Constraints                                           |
-| ------- | ----------------------------------------------------- |
-| integer | Foreign Key ([Sections](sections).id), <br/> Not Null |
+| Type    | Constraints                                              |
+| ------- | -------------------------------------------------------- |
+| integer | Foreign Key ([Sections.id](sections#id)), <br/> Not Null |
 
 ### `subsection_id`
 
 The unique identifier of the subsection that the Shabad belongs to.
 
-| Type    | Constraints                                |
-| ------- | ------------------------------------------ |
-| integer | Foreign Key ([Subsections](subsections).id |
+| Type    | Constraints                                    |
+| ------- | ---------------------------------------------- |
+| integer | Foreign Key ([Subsections.id](subsections#id)) |
 
 ### `sttm_id`
 
@@ -56,9 +56,9 @@ The unique identifier of the equivalent Shabad within the SikhiToTheMax 2 databa
 
 The Gurbani [composition](compositions) that the Shabad belongs to.
 
-| Type    | Constraints                                         |
-| ------- | --------------------------------------------------- |
-| integer | Foreign Key ([Sources](sources).id), <br/> Not Null |
+| Type    | Constraints                                            |
+| ------- | ------------------------------------------------------ |
+| integer | Foreign Key ([Sources.id](sources#id)), <br/> Not Null |
 
 ### `order_id`
 

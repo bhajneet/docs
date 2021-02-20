@@ -2,7 +2,7 @@
 title: Subsections
 ---
 
-The `Subsections` table contains a list of all the different subsections, per single [section](sections). Every subsection must belong to a single [section](section).
+The `Subsections` table contains a list of all the different subsections, per single [section](sections). Every subsection must belong to a single [section](sections).
 
 To determine which [source](sources) that a subsection is from, retrieve the source of the section that the subsection belongs to, using `section_id`.
 
@@ -20,9 +20,9 @@ The unique identifier of the subsection.
 
 The unique identifier of the [section](sections) that the section belongs to.
 
-| Type    | Constraints                                           |
-| ------- | ----------------------------------------------------- |
-| integer | Foreign Key ([Sections](sections).id), <br/> Not Null |
+| Type    | Constraints                                              |
+| ------- | -------------------------------------------------------- |
+| integer | Foreign Key ([Sections.id](sections#id)), <br/> Not Null |
 
 ### `name_english`
 

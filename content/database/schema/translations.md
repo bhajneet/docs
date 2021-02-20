@@ -16,17 +16,17 @@ If used, the `additional_information` is a serialized JSON string that must be d
 
 The unique identifier of the Gurbani line that the translation corresponds with.
 
-| Type    | Constraints                                        |
-| ------- | -------------------------------------------------- |
-| char(4) | Primary Key, <br/> Foreign Key ([Lines](lines).id) |
+| Type    | Constraints                                           |
+| ------- | ----------------------------------------------------- |
+| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](lines#id)) |
 
 ### `translation_source_id`
 
 The unique identifier of the [translation source](translation_sources) that the translation originates from.
 
-| Type    | Constraints                                                                    |
-| ------- | ------------------------------------------------------------------------------ |
-| integer | Primary Key, <br/> Foreign Key ([Translation_Sources](translation_sources).id) |
+| Type    | Constraints                                                                       |
+| ------- | --------------------------------------------------------------------------------- |
+| integer | Primary Key, <br/> Foreign Key ([Translation_Sources.id](translation_sources#id)) |
 
 ### `translation`
 

@@ -10,9 +10,9 @@ The `Line_Content` table contains the content for [Lines](lines) of [Sources](so
 
 The unique identifier of the line.
 
-| Type    | Constraints                                        |
-| ------- | -------------------------------------------------- |
-| char(4) | Primary Key, <br/> Foreign Key ([Lines](lines).id) |
+| Type    | Constraints                                           |
+| ------- | ----------------------------------------------------- |
+| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](lines#id)) |
 
 ### `source_id`
 

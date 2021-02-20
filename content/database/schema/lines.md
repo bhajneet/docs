@@ -24,9 +24,9 @@ A unique identifier for the line which never changes.
 
 A unique identifier of the [Shabad](shabads) to which the line belongs to.
 
-| Type    | Constraints                                        |
-| ------- | -------------------------------------------------- |
-| char(3) | Foreign Key ([Shabads](shabads).id) <br/> Not Null |
+| Type    | Constraints                                           |
+| ------- | ----------------------------------------------------- |
+| char(3) | Foreign Key ([Shabads.id](shabads#id)) <br/> Not Null |
 
 ### `source_page`
 

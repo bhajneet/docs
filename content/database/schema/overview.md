@@ -98,7 +98,7 @@ Transliterations for Gurbani `Lines` in a given `Language` and `Source`. [Read m
 
 ### Translation_Sources
 
-Translation source authors and languages for a single Read more. >ranslation_Sources` >](translation_sources)
+Translation source authors and languages for a single [Read more >](translation_sources)
 
 | Example                                        | Dependency             |
 | ---------------------------------------------- | ---------------------- |

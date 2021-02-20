@@ -14,25 +14,25 @@ The `transliteration` can be nullable.
 
 The unique identifier of the line that the transliteration corresponds with.
 
-| Type    | Constraints                                        |
-| ------- | -------------------------------------------------- |
-| char(4) | Primary Key, <br/> Foreign Key ([Lines](lines).id) |
+| Type    | Constraints                                           |
+| ------- | ----------------------------------------------------- |
+| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](lines#id)) |
 
 ### `source_id`
 
 The unique identifier of the [Source](sources) that the transliteration is of.
 
-| Type    | Constraints                                            |
-| ------- | ------------------------------------------------------ |
-| integer | Primary Key, <br/> Foreign Key ([Sources](sources).id) |
+| Type    | Constraints                                               |
+| ------- | --------------------------------------------------------- |
+| integer | Primary Key, <br/> Foreign Key ([Sources.id](sources#id)) |
 
 ### `language_id`
 
 The unique identifier of the [Language](languages) that the transliteration is in.
 
-| Type    | Constraints                                                |
-| ------- | ---------------------------------------------------------- |
-| integer | Primary Key, <br/> Foreign Key ([Languages](languages).id) |
+| Type    | Constraints                                                   |
+| ------- | ------------------------------------------------------------- |
+| integer | Primary Key, <br/> Foreign Key ([Languages.id](languages#id)) |
 
 ### `transliteration`
 
