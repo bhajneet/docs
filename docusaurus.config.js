@@ -30,7 +30,7 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: 'Documentation',
+      title: 'Docs',
       logo: {
         alt: 'ShabadOS Logo',
         src: 'img/logo.png',
