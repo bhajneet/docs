@@ -4,7 +4,7 @@ const pages = require( './src/pages.config' )
 
 module.exports = {
   title: 'Shabad OS Docs',
-  tagline: 'Documentation site for Shabad OS',
+  tagline: 'Browse the latest docs, including tutorial guides, sample code, product articles, and API references.',
   url: 'https://docs.shabados.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
