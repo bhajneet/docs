@@ -2,8 +2,10 @@
 title: URL Endpoints
 ---
 
-import aboutUrl from "./images/shabados-about-url.png"
-import taskManager from "./images/ip-address-windows-task-manager.png"
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+import aboutUrl from '@site/static/img/shabados-about-url.png'
+import taskManager from '@site/static/img/ip-address-windows-task-manager.png'
 
 This tutorial is for users wishing to know about Shabad OS being accessed through a web browser. This tutorial will show which pages are available as well as how to find the correct address to use in most modern web browsers.
 

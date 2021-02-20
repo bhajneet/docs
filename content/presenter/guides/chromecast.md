@@ -2,9 +2,11 @@
 title: Chromecast
 ---
 
-import castButtonGoogleChrome from "./images/google-chrome-cast-button.png"
-import resizingChrome from "./images/google-chrome-resizing-info.png"
-import chromeUnlockDevTools from "./images/google-chrome-undock-devtools.png"
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+import castButtonGoogleChrome from '@site/static/img/google-chrome-cast-button.png'
+import resizingChrome from '@site/static/img/google-chrome-resizing-info.png'
+import chromeUnlockDevTools from '@site/static/img/google-chrome-undock-devtools.png'
 
 This tutorial is for users that would like to cast the Shabad OS display to a chromecast. This tutorial will show how to display Shabad OS on devices (e.g. TVs, projectors, and monitors) with chromecast.
 

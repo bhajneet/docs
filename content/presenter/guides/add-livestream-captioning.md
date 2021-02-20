@@ -2,12 +2,14 @@
 title: Add Live Streaming Captioning
 ---
 
-import settingsOverlayUrl from "../images/settings-overlay-url.png"
-import obsStudio from "../images/add-browser-obs-studio.png"
-import vMix from "../images/add-browser-vmix.png"
-import wirecastAddWebpage from "../images/wirecast-add-web-page.png"
-import wirecastSourceProperties from "../images/wirecast-source-properties.png"
-import wirecasteShotLayerProperties from "../images/wirecast-shot-layer-properties.png"
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+import settingsOverlayUrl from '@site/static/img/settings-overlay-url.png'
+import obsStudio from '@site/static/img/add-browser-obs-studio.png'
+import vMix from '@site/static/img/add-browser-vmix.png'
+import wirecastAddWebpage from '@site/static/img/wirecast-add-web-page.png'
+import wirecastSourceProperties from '@site/static/img/wirecast-source-properties.png'
+import wirecasteShotLayerProperties from '@site/static/img/wirecast-shot-layer-properties.png'
 
 This tutorial is for users wishing to integrate Shabad OS captions with their live stream software. This tutorial shows how to add a browser to popular live streaming applications.
 
