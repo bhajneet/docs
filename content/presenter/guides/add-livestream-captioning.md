@@ -1,95 +1,102 @@
 ---
-title: Add Live Streaming Captioning
+title: Configuring Live Stream Captions
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import settingsOverlayUrl from '@site/static/img/settings-overlay-url.png'
 import obsStudio from '@site/static/img/add-browser-obs-studio.png'
 import vMix from '@site/static/img/add-browser-vmix.png'
 import wirecastAddWebpage from '@site/static/img/wirecast-add-web-page.png'
 import wirecastSourceProperties from '@site/static/img/wirecast-source-properties.png'
-import wirecasteShotLayerProperties from '@site/static/img/wirecast-shot-layer-properties.png'
+import wirecastShotLayerProperties from '@site/static/img/wirecast-shot-layer-properties.png'
 
-This tutorial is for users wishing to integrate Shabad OS captions with their live stream software. This tutorial shows how to add a browser to popular live streaming applications.
+<p class="lead">Learn how to set up popular live stream software with captions using Shabad OS's Overlays.</p>
 
-## Concept
+## Finding the Overlay URL for Shabad OS
 
-Shabad OS provides an Overlay URL which displays parts of the currently activated line. To show this on a livestream, one has to add a browser element to the livestream program/software and point it to the aforementioned URL. For more information on setting up the Overlay, please see how to [Get started with Overlays](./get-started.md). This tutorial will show how to integrate the Shabad OS Overlay with popular livestream softwares.
-
-## Practical
-
-### Step 1: Find the Overlay URL for Shabad OS
-
-Copying this should be as easy as clicking the Overlay URL in _Shabad OS > Settings > Overlay_. If there is no URL there, please read [URL Endpoints](./../url-endpoints.md).
+In **Shabad OS**, use the cog/gear icon in the controller to open **Settings**. Choose **Overlay** in the left pane, then click the **Overlay URL** to copy the URL to your system clipboard.
 
 <img src={settingsOverlayUrl} width={500} />
 
-Find the Overlay URL in Settings
+## Adding a browser to the live stream
 
-### Step 2: Configure the Livestream Software
+In the live stream software, add a browser to the scene. If the browser is not sized to match the live stream's resolution correctly, it may result in blurry text.
 
-Add a browser, point it to the Overlay URL, and size it to match the live stream resolution.
+<Tabs
+defaultValue="obs-studio"
+values={[
+{label: 'OBS Studio', value: 'obs-studio'},
+{label: 'vMix', value: 'vmix'},
+{label: 'Wirecast', value: 'wirecast'},
+]}>
+<TabItem value="obs-studio">
 
-:::tip
-For clear and crisp fonts, match the browser size to the resolution of the live stream. Avoid zooming or resizing the browser element to incorrect proportions.
-:::
+**Finding the Base (Canvas) Resolution**
 
-:::note
-Any software which allows adding a browser URL will work. Popular applications like [OBS Studio](https://obsproject.com/), [vMix](https://www.vmix.com/), and [Wirecast](https://www.telestream.net/wirecast/overview.htm) can work. See [Examples](#examples) below.
-:::
+1. Use the **File** menu, then click **Settings**.
+2. Click **Video** in the left pane.
+3. Note down the **Base (Canvas) Resolution**.
+4. Click **OK** or **Cancel** to close the window.
 
-## Examples
+**Adding a browser to the scene**
 
-:::note List of Examples
+<img src={obsStudio} alt="OBS Studio" width={500} />
 
-- [OBS Studio](#obs-studio)
-- [vMix](#vmix)
-- [Wirecast](#wirecast)
+1. Click the **+** button in **Sources** to add a **Browser** to the scene.
+2. Fill in the **URL** with the Overlay URL from Shabad OS.
+3. Fill the **Width** and **Height** to match the Base (Canvas) Resolution. The resolution is displayed width first, height second. E.g. "1920x1080" means width=1920 and height=1080.
+4. Delete any text in **Custom CSS**.
 
-:::
+</TabItem>
+<TabItem value="vmix">
 
-### OBS Studio
+**Finding the Output Size**
 
-1. Add a browser to OBS Studio's scene by clicking the "+" button in _Sources_. For ease of use we recommend naming this source "Shabad OS Captions" instead of simply "Browser".
-2. Focus on the _URL_, _Width_, _Height_, and _Custom CSS_ fields.
+1. Open **Settings**, then click on **Display**
+2. Note down the **Output Size**
+3. Close the window.
 
-   1. _URL_ should be the URL from [Step 1](#step-1-find-the-overlay-url-for-shabad-os).
-   2. _Width_ and _Height_ should match the Base Canvas Resolution found in _Settings > Video_ (e.g. 1920x1080 would mean 1920 for the width and 1080 for the height).
-   3. _Custom CSS_ should be empty.
-      <img src={obsStudio} alt="OBS Studio" width={500} />
+**Adding a web browser to the input bar**
 
-      Adding a browser source to OBS Studio
+<img src={vMix} alt="vMix" width={500} />
 
-### vMix
+1. In the Main Window, use the **Add Input** menu, then click **More**.
+2. Click on **Web Browser** in the left pane.
+3. Fill in the **URL** with the Overlay URL from Shabad OS.
+4. Fill the **Width** and **Height** to match the Output Size. The resolution is displayed width first, height second. E.g. "1920x1080" means width=1920 and height=1080.
 
-1. Add a web browser input to vMix's mixer by clicking _Add Input > More > Web Browser_.
-2. Focus on the _URL_, _Width_, and _Height_ fields.
+</TabItem>
+<TabItem value="wirecast">
 
-   1. _URL_ should be the URL from [Step 1](#step-1-find-the-overlay-url-for-shabad-os).
-   2. _Width_ and _Height_ should match the Output Size found in _Settings > Display_ (e.g. 1920x1080 would mean 1920 for the width and 1080 for the height).
-      <img src={vMix} alt="vMix" width={500} />
+**Finding the Canvas Size**
 
-      Adding a browser source to vMix
+1. Use the **Output** menu, then select the **Canvas Size** sub-menu.
+2. Note down the **Canvas Size**.
 
-### Wirecast
+**Adding a web page shot layer to the master layer**
 
-1. Add a web page shot layer to Wirecast's master layer. There may be a prompt to install Flash, which can be ignored as Shabad OS does not require it.
+1. Click the **Plus Button** (+) on the first-most/top-most layer in the shot list to open the Add Shot menu. There may be a prompt to install Flash -- it is not required for Shabad OS.
+
    <img src={wirecastAddWebpage} alt="Wirecast add web page" width={500} />
 
-   Adding a web page shot layer to Wirecast
+2. Select the **Network** shot category from the left pane.
+3. Select **Web Page**, then click **Add**.
+4. In **Edit Shot**, select the **Source Properties** tab.
 
-2. Set the name to something familiar (e.g. "Shabad OS Overlay").
+   <img src={wirecastSourceProperties} alt="Wirecast source properties" width={500} />
 
-3. Focus on the _Address_, _Video Width_, and _Video Height_ fields.
+5. Fill in the **Address** with the Overlay URL from Shabad OS.
+6. Fill the **Video Width** and **Video Height** fields to match the Canvas Size. The resolution is displayed width first, height second. E.g. "1920x1080" means width=1920 and height=1080.
+7. In **Edit Shot**, select the **Shot Layer Properties** tab.
 
-   1. _Address_ should be the URL from [Step 1](#step-1-find-the-overlay-url-for-shabad-os).
-   2. _Video Width_ and _Video Height_ should match the Canvas Size found in _Output > Canvas Size_ (e.g. "Auto (1280x720)" would mean 1280 for the width and 720 for the height).
-      <img src={wirecastSourceProperties} alt="Wirecast source properties" width={500} />
+   <img src={wirecastShotLayerProperties} alt="Wirecast shot layer properties" width={500} />
 
-      Configuring the Source Properties in Wirecast
+8. Set the **Scale** slider to 100%.
 
-4. Set scale of the shot layer to 100%.
-   <img src={wirecasteShotLayerProperties} alt="Wirecast shot layer properties" width={500} />
+</TabItem>
+</Tabs>
 
-   100% Scale used for the Shot Layer Properties in Wirecast
+## Troubleshoot
+
+If there is no Overlay URL in Shabad OS settings, please read [URL Endpoints](./../url-endpoints.md).
