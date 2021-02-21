@@ -3,8 +3,6 @@ title: Install ShabadOS for Desktop
 sidebar_label: Install Presenter
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
 import windowsSmartScreen from '@site/static/img/smartscreen.jpg'
 
 ### Downloading the Installer

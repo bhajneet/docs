@@ -2,8 +2,6 @@
 title: Proofreading
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
 import differenceBrowser from '@site/static/img/proofreading-difference-example-browser.png'
 import differencePdf from '@site/static/img/proofreading-difference-example-pdf.png'
 import copySnipAndSketch from '@site/static/img/proofreading-example-copy-snip-and-sketch.png'

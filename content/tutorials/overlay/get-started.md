@@ -3,8 +3,6 @@ title: Get started with Overlays
 sidebar_label: Get started
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
 import aboutUrl from '@site/static/img/shabados-about-url.png'
 import taskManager from '@site/static/img/ip-address-windows-task-manager.png'
 

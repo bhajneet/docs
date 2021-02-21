@@ -2,10 +2,10 @@
 title: URL Endpoints
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
 import aboutUrl from '@site/static/img/shabados-about-url.png'
 import taskManager from '@site/static/img/ip-address-windows-task-manager.png'
+
+<p class="lead">Shabad OS has a web URL for each page in the desktop app. You can view the display, controller, settings, and more through web URLs anywhere on the same network.</p>
 
 This tutorial is for users wishing to know about Shabad OS being accessed through a web browser. This tutorial will show which pages are available as well as how to find the correct address to use in most modern web browsers.
 
