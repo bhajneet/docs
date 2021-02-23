@@ -33,7 +33,7 @@ Overlays are designed around filling the screen, but a broadcast element could r
 :::
 
 :::tip
-[Customize](/tutorials/overlay/create-custom-theme.md) an overlay with the provided example overlay.
+[Customize](/tutorials/overlay/create-custom-theme) an overlay with the provided example overlay.
 :::
 
 ### Step 3: Toggle visible information
@@ -42,7 +42,7 @@ Similar to choosing what is available on the presenter, a user toggles fields fo
 
 ## Troubleshooting
 
-If you cannot find the URL in _Shabad OS > Settings > Overlay_ then continue reading the following two methods to manually find the device's URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in [URL Endpoints](/presenter/reference/url-endpoints.md).
+If you cannot find the URL in _Shabad OS > Settings > Overlay_ then continue reading the following two methods to manually find the device's URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in [URL Endpoints](/presenter/reference/url-endpoints).
 
 The device running Shabad OS has an IP address. In production, Shabad OS is available from port 1699 of this IP address. This combination of IP address and port can be used in most web browsers.
 
