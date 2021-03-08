@@ -437,3 +437,31 @@ html[data-theme='dark'] .product_card:hover {
   height: 1rem;
   fill: var(--ifm-color-primary);
 }
+
+/*-----------------------------------------------------------------------------
+  Tabs
+-----------------------------------------------------------------------------*/
+
+html[data-theme='light'] .tabs,
+html[data-theme='light'] .tabs + div {
+  background: #f2f2f2;
+}
+
+html[data-theme='dark'] .tabs,
+html[data-theme='dark'] .tabs + div {
+  background: #232324;
+}
+
+.tabs {
+  border-radius: var(--ifm-global-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tabs + div {
+  border-radius: var(--ifm-global-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 1rem;
+  margin-top: 0em !important;
+}
