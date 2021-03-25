@@ -6,6 +6,7 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 import zoomSettingsClosedCaptioning from '@site/static/img/zoom-settings-closed-captioning.png'
 import zoomMeetingControlsClosedCaption from '@site/static/img/zoom-meeting-controls-closed-caption.png'
+import shabadosZoomPanel from '@site/static/img/shabados-zoom-panel.png'
 
 <p class="lead">As a meeting host, you can add closed captions to Zoom meetings by providing Shabad OS Presenter with the the caption URL.</p>
 
@@ -31,8 +32,10 @@ Closed captions can be provided by the host of a Zoom meeting. Before beginning 
 ## Sharing the Zoom API token with Shabad OS
 
 1. In the Shabad OS controller, click the cog/gear to open the **Settings** window.
-2. Select **#TK** in the left pane.
+2. Select **Closed Captioning** in the left pane.
 3. Where it says **Zoom API Token**, paste the URL from Zoom.
+
+<img src={shabadosZoomPanel} width={500} />
 
 ## Teaching participants to view closed captioning
 
