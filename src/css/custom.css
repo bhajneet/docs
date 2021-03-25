@@ -503,3 +503,19 @@ html[data-theme='dark'] .product_card:hover {
   font-size: 2rem;
   translate: 0.15rem -0.1rem;
 }
+
+/*-----------------------------------------------------------------------------
+  Scrollbars
+
+  For whatever reasons, these are not set correctly and use the light theme
+  scrollbar color unless these rules are specified. Can check later if it's
+  fixed upstream.
+-----------------------------------------------------------------------------*/
+
+html[data-theme='dark'] body {
+  background: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .prism-code {
+  background: var(--ifm-color-gray-800);
+}
