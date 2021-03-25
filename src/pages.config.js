@@ -81,6 +81,7 @@ const pages = [
       id: 'viewer',
       path: 'content/viewer',
       routeBasePath: 'viewer',
+      sidebarPath: require.resolve( './sidebars/viewer' ),
     },
   ],
 ]
