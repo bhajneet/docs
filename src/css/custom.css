@@ -471,3 +471,27 @@ html[data-theme='dark'] .product_card:hover {
   height: 1rem;
   fill: var(--ifm-color-primary);
 }
+
+/*-----------------------------------------------------------------------------
+  Mobile
+-----------------------------------------------------------------------------*/
+
+.button--secondary:not(.button--outline) {
+  color: var(--ifm-color-white);
+  --ifm-button-background-color: var(--ifm-navbar-link-hover-color);
+  --ifm-button-border-color: var(--ifm-navbar-link-hover-color);
+  padding: 1rem;
+  border-radius: 4rem;
+}
+
+.button--secondary[aria-label='Close Menu'] > span {
+  font-size: 0;
+}
+
+.button--secondary[aria-label='Close Menu'] > span::before {
+  content: '+';
+  rotate: 45deg;
+  font-weight: 100;
+  font-size: 2rem;
+  translate: 0.15rem -0.1rem;
+}
