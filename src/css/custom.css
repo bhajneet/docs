@@ -421,7 +421,11 @@ ul.table-of-contents {
   background-color: var(--ifm-navbar-background-color);
   color: var(--ifm-navbar-link-color);
   background: radial-gradient(75vw 100% at 50% 115%, #ba1e62, #300519 100%);
-  padding: 8rem 0;
+  padding: 6rem 0;
+}
+
+.hero__title {
+  font-size: 3.5rem !important;
 }
 
 .home.container {
