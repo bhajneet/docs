@@ -113,7 +113,7 @@ This only works on the iOS version of Streamlabs until the developers fix an iss
 7. Fill in the **URL** with the Overlay URL from Shabad OS.
 
 :::caution
-Though the hint text in Streamlabs mentions `https` be sure to use `http` instead for the URL from the Shabad OS Presenter. For example, if the Shabad OS Presenter says the URL is `192.168.1.50:1699/overlay`, then type `https://192.168.1.50:1699/overlay` into Streamlabs.
+Though the hint text in Streamlabs mentions `https` be sure to use `http` instead for the URL from the Shabad OS Presenter. For example, if the Shabad OS Presenter says the URL is `192.168.1.50:1699/overlay`, then type `http://192.168.1.50:1699/overlay` into Streamlabs.
 :::
 
 1. Tap **Add**.
