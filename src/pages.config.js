@@ -68,16 +68,6 @@ const pages = [
     '@docusaurus/plugin-content-docs',
     {
       ...sharedValues,
-      id: 'tutorials',
-      path: 'content/tutorials',
-      routeBasePath: 'tutorials',
-      sidebarPath: require.resolve( './sidebars/tutorials' ),
-    },
-  ],
-  [
-    '@docusaurus/plugin-content-docs',
-    {
-      ...sharedValues,
       id: 'viewer',
       path: 'content/viewer',
       routeBasePath: 'viewer',
